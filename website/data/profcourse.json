@@ -1,0 +1,38 @@
+var data=[
+  {
+    "prof": "Allen Walker",
+    "course": "CGN 2302"
+  },
+  {
+    "prof": "Allen Walker",
+    "course": "CVV 3203"
+  },
+  {
+    "prof": "Allen Walker",
+    "course": "COP 3503"
+  },
+  {
+    "prof": "Abby Kim",
+    "course": "CVV 3203"
+  },
+  {
+    "prof": "Abby Kim",
+    "course": "COP 3233"
+  },
+  {
+    "prof": "Abby Kim",
+    "course": "COP 4402"
+  },
+  {
+    "prof": "Amy Brown",
+    "course": "CGN 3021"
+  },
+  {
+    "prof": "Amy Brown",
+    "course": "COP 3233"
+  },
+  {
+    "prof": "Amy Brown",
+    "course": "COP 3235"
+  }
+]

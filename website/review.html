@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous">
+  </script>
+  </head>
+
+
+  <body class="bg">
+    <div class="container">
+      <div class="menu-bar">
+        <div class="user-profile-picture"></div>
+        <div class="slide-menu-button" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="slide-menu">
+        <div class="slide-menu-item">Search</div>
+        <div class="slide-menu-item">Schedule</div>
+        <div class="slide-menu-item">About</div>
+        <div class="slide-menu-item">Log Out</div>
+
+      </div>
+        <h2 class="centered big-logo"> COP3503</h2>
+        <p style="text-align: center; margin:0;">Professor. Sally Molly</p>
+        <div class="full-size white" style="min-height:600px;">
+          <div class="centered content-box">
+
+        <h2>App. of Discrete Structure</h2>
+        <div class="full-size overview">
+          <div id="chartContainer" style="height: 300px; width: 100%; margin-bottom: 40px;" ></div>
+          <div id="chartContainer2" style="height: 300px; width: 100%; margin-bottom: 10px;" onclick="popup()"></div>
+
+
+
+
+
+          <hr>
+          <p style="margin: 0;">Course Drop Rate: 10 %</p>
+          <p style="margin: 0;">Average Pass Rate: 75 %</p>
+          <hr>
+          <form id="go" action="schedule.html">
+          <p class="color-t-able" style="color:#0096CF; margin: 0;" onclick="go.submit()">Add This Course to My Schedule</p>
+          <p style="color:#0096CF; margin: 0;">Course Syllabus</p>
+          <p class="not-free" style="color:#0096CF; margin: 0;">Course Materials</p>
+          <div class="full-size locked">you can unlock this feature with <u>subscription</u> or by <u>uploading existing material</u></div>
+          <p style="color:#0096CF; margin: 0;" onclick="popup()" id="surveyOpp">Take a short survey to get some points!</p>
+          </form>
+          <!-- Here-->
+          <div id="popForm">
+            <form class="form-style-7">
+              <ul>
+                <li>
+                  <label for="name">Grade</label>
+                  <input type="text" name="name" maxlength="100" id="grade">
+                  <span>Enter your Average semester grade here</span>
+                </li>
+                <li>
+                  <label for="email">Course Clarity </label>
+                  <input type="text" name="Clarity" maxlength="100" id='clarity'>
+                  <span>one to five: how clear does the professor teach?</span>
+                </li>
+                <li>
+                  <label for="url">Course Difficulty</label>
+                  <input type="text" name="Difficulty" maxlength="100" id='difficulty'>
+                  <span>one to five: how difficult do you think this course is?</span>
+                </li>
+                <li>
+                  <label for="url">Current Semester</label>
+                  <!--<input type="text" name="Difficulty" maxlength="100" id='term'>
+                  <span>What's your current semester? Ex. spring2019</span>-->
+                  <select name="semester" id='semester'>
+                    <option value="volvo">spring2018</option>
+                    <option value="saab">summer2018</option>
+                    <option value="saab">fall2018</option>
+                    <option value="mercedes">spring2019</option>
+                    <option value="audi">summer2019</option>
+                  </select>
+                </li>
+
+                <li>
+                  <input type="submit" value="Send This" id='surveyButt' onclick="afSubmit();submit()" >
+                </li>
+              </ul>
+            </form>
+           </div>
+             <!-- Here-->
+
+        </div>
+        <h2>Related Courses</h2>
+        <div class="full-size related">
+          EGN1234 - Sally Molly<br>
+          EGN4213 - Sally Molly<br>
+          EGN3322 - Andrew Dicks
+        </div>
+        <h2>Comments</h2>
+        <div class="centered comment-area">
+        <div class="full-size comment-text">
+          <textarea class="full-size textbox"></textarea>
+          <div class="full-size underbox">
+            <div class="under"></div>
+            <button class="comment-submit">Submit</button>
+          </div>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <p><b>qhde****</b></p>
+            <p>I like his teaching!!! Highly recommended.</p>
+            <p class="date">2019-01-19</p>
+            <button>reply <b>2</b></button>
+          </div>
+
+          <div class="comment-item">
+            <p><b>runw******</b></p>
+            <p>He's boring :(</p>
+            <p class="date">2019-01-15</p>
+            <button>reply <b>0</b></button>
+          </div>
+
+          <div class="comment-item">
+            <p><b>qwer****</b></p>
+            <p>Don't be hesitant. You'll like him.</p>
+            <p class="date">2019-01-10</p>
+            <button>reply <b>1</b></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="full-size footer">
+        <p>ULA(University Life Advisor)</p>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="data/profcourse.json"></script>
+  <script type="text/javascript" src="scripts/sexy_script.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="data/clarity1.js"></script>
+  <script src="data/clarity2.js"></script>
+  <script src="data/clarity3.js"></script>
+  <script src="data/clarity4.js"></script>
+  <script src="data/clarity5.js"></script>
+  <script src="data/grades.json"></script>
+  <script src="scripts/LineChart.js"></script>
+  <script src="scripts/PieChart.js"></script>
+  <script>
+    if(parseQuery(document.location.search).h == "1")
+    {
+      $(".color-t-able").css("color","#999");
+    }
+
+    function toggleMenu(x) {
+      x.classList.toggle("change");
+      $(".slide-menu").slideToggle();
+    }
+
+    $(".not-free").click(function(){
+      $(".locked").slideDown();
+      $(".not-free").css("color","#999");
+    });
+
+    $(".comment-submit").click(function(){
+      $(".comment-list").append('<div class="comment-item"><p><b>hosu*******</b></p><p>'+$(".textbox").val()+'</p><p class="date">2019-01-20</p><button>reply <b>0</b></button></div>');
+      $(".textbox").val("");
+    });
+  </script>
+  </body>
+</html>

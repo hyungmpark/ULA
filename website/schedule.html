@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous">
+  </script>
+  </head>
+
+
+  <body class="bg">
+    <div class="container">
+      <div class="menu-bar">
+        <div class="user-profile-picture"></div>
+        <div class="slide-menu-button" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="slide-menu">
+        <div class="slide-menu-item">Search</div>
+        <div class="slide-menu-item">Schedule</div>
+        <div class="slide-menu-item">About</div>
+        <div class="slide-menu-item">Log Out</div>
+
+      </div>
+        <h2 class="centered big-logo"> Hosung Lee</h2>
+        <p style="text-align: center; margin:0;">University of Florida</p>
+        <div class="full-size white" style="min-height:600px;">
+          <div class="centered content-box">
+
+        <h2 style="margin-bottom: 10px">My Schedule</h2>
+        <div class="full-size overview">
+          <p style="margin:0"><b>Spring 2019</b></p>
+          <p style="margin:0; margin-bottom: 10px;">Credits : 12</p>
+
+          <div class="full-size course-box">
+            <div class="full-size course-box-header">
+              <div class="course-box-name">
+                CGS1032 - Programming Basics 2
+              </div>
+              <button class="course-box-button">
+                Drop
+              </button>
+            </div>
+            <div class="full-size course-box-body">
+              <p>Instructor : Sally Daily</p>
+              <p>Credits : 3</p>
+              <p style="color: #0096CF">View Detail</p>
+            </div>
+          </div>
+
+          <div class="full-size course-box">
+            <div class="full-size course-box-header">
+              <div class="course-box-name">
+                COP2302 - Funda. Programming 1
+              </div>
+              <button class="course-box-button">
+                Drop
+              </button>
+            </div>
+            <div class="full-size course-box-body">
+              <p>Instructor : Daniel Handerson</p>
+              <p>Credits : 3</p>
+              <p style="color: #0096CF">View Detail</p>
+            </div>
+          </div>
+
+
+          <div class="full-size course-box">
+            <div class="full-size course-box-header">
+              <div class="course-box-name">
+                ECO3702 - Engineering Economics
+              </div>
+              <button class="course-box-button">
+                Drop
+              </button>
+            </div>
+            <div class="full-size course-box-body">
+              <p>Instructor : Mark Dewey</p>
+              <p>Credits : 3</p>
+              <p style="color: #0096CF">View Detail</p>
+            </div>
+          </div>
+
+
+          <div class="full-size course-box">
+            <div class="full-size course-box-header">
+              <div class="course-box-name">
+                COP3503 - App. of Discrete Structure
+              </div>
+              <button class="course-box-button">
+                Drop
+              </button>
+            </div>
+            <div class="full-size course-box-body">
+              <form id="detail" action="review.html">
+                <input type="hidden" name="h" value="1"></input>
+              <p>Instructor : Sam Hamilton</p>
+              <p>Credits : 3</p>
+              <p style="color: #0096CF" onclick="detail.submit()">View Detail</p>
+            </form>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+      <div class="full-size footer">
+        <p>ULA(University Life Advisor)</p>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="data/profcourse.json"></script>
+  <script type="text/javascript" src="scripts/sexy_script.js"></script>
+  <script>
+    $(".course-box-button").click(function(){
+      $(this).parent().parent().slideUp();
+    });
+  </script>
+  </body>
+</html>

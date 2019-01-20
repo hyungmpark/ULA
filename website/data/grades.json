@@ -1,0 +1,122 @@
+var grades = [
+  {
+    "Name": "Carmen Mcdonald",
+    "Grade": 67
+  },
+  {
+    "Name": "Zachary Ross",
+    "Grade": 100
+  },
+  {
+    "Name": "Daniel Figueroa III",
+    "Grade": 74
+  },
+  {
+    "Name": "Caitlyn Arnold",
+    "Grade": 67
+  },
+  {
+    "Name": "Victoria Rosario",
+    "Grade": 94
+  },
+  {
+    "Name": "David Peterson",
+    "Grade": 84
+  },
+  {
+    "Name": "Joel French",
+    "Grade": 84
+  },
+  {
+    "Name": "Jennifer Harris",
+    "Grade": 81
+  },
+  {
+    "Name": "Maxwell King",
+    "Grade": 51
+  },
+  {
+    "Name": "Patrick Santos",
+    "Grade": 82
+  },
+  {
+    "Name": "James Greene",
+    "Grade": 91
+  },
+  {
+    "Name": "George Murphy",
+    "Grade": 97
+  },
+  {
+    "Name": "Valerie Davis MD",
+    "Grade": 80
+  },
+  {
+    "Name": "Emily Bell",
+    "Grade": 86
+  },
+  {
+    "Name": "Taylor Bailey",
+    "Grade": 92
+  },
+  {
+    "Name": "Shannon Phillips",
+    "Grade": 63
+  },
+  {
+    "Name": "Mark Price",
+    "Grade": 91
+  },
+  {
+    "Name": "Edgar Boyle",
+    "Grade": 85
+  },
+  {
+    "Name": "Victoria Warren",
+    "Grade": 82
+  },
+  {
+    "Name": "Carlos Pittman",
+    "Grade": 61
+  },
+  {
+    "Name": "Sherry King",
+    "Grade": 72
+  },
+  {
+    "Name": "Christopher Marshall",
+    "Grade": 60
+  },
+  {
+    "Name": "Matthew Foster",
+    "Grade": 80
+  },
+  {
+    "Name": "Ricky Reed",
+    "Grade": 98
+  },
+  {
+    "Name": "Rebecca Hunt",
+    "Grade": 77
+  },
+  {
+    "Name": "Kevin Lee",
+    "Grade": 83
+  },
+  {
+    "Name": "Joshua Miller",
+    "Grade": 95
+  },
+  {
+    "Name": "Brooke Lewis",
+    "Grade": 61
+  },
+  {
+    "Name": "Tony Larson",
+    "Grade": 74
+  },
+  {
+    "Name": "Bradley Lopez",
+    "Grade": 89
+  }
+]

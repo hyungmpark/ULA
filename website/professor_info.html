@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous">
+  </script>
+  </head>
+
+
+  <body class="bg">
+    <div class="container">
+      <div class="main-box">
+        <div class="centered prof-image"></div>
+        <h2 class="centered big-logo"> Professor Name</h2>
+        <div class="centered list-box">
+          <form id="class-selection" action="review.html">
+            <ul id="course-list">
+            </ul>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="data/profcourse.json"></script>
+  <script type="text/javascript" src="scripts/sexy_script.js"></script>
+  <script>
+  var name = parseQuery(document.location.search).name;
+  name = name.split("+").join(" ");
+  document.getElementsByClassName("big-logo")[0].innerHTML = name;
+    var courses = [];
+    for(i in data)
+    {
+      if(data[i]["prof"] == name)
+      {
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(data[i]["course"]);
+        node.onclick = function() {
+          document.getElementById("class-selection").submit();
+        };
+
+        node.appendChild(textnode);
+        document.getElementById("course-list").appendChild(node);
+      }
+    }
+    document.getElementsByClassName("big-logo")[0].innerHTML = name;
+  </script>
+  </body>
+</html>

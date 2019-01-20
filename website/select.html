@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous">
+  </script>
+  </head>
+
+
+  <body class="bg">
+    <div class="container">
+      <div class="main-box">
+        <h1 class="centered big-logo">University of Florida</h1>
+        <div class="centered search">
+        <div id="professor-course-search">
+          <form action="professor_info.html" method="get">
+            <input name="name" class="typeahead search-bar" type="text" placeholder="Professor/Course Name">
+            <button hidden></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="data/profcourse.json"></script>
+  <script type="text/javascript" src="dist/bloodhound.min.js"></script>
+  <script type="text/javascript" src="dist/typeahead.bundle.min.js"></script>
+  <script type="text/javascript" src="dist/typeahead.jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/auto_complete.js"></script>
+  <script type="text/javascript" src="scripts/sexy_script.js"></script>
+  <script>
+    var univ = parseQuery(document.location.search).univ;
+    univ = univ.split("+").join(" ");
+    document.getElementsByClassName("big-logo")[0].innerHTML = univ;
+  </script>
+  </body>
+</html>
